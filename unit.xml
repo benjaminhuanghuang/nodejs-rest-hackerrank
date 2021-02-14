@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Mocha Tests" time="0.1650" tests="12" failures="8">
+  <testsuite name="Root Suite" timestamp="2021-02-14T21:05:40" tests="0" time="0.0000" failures="0">
+  </testsuite>
+  <testsuite name="reminders_api" timestamp="2021-02-14T21:05:40" tests="12" file="/Users/bhuang/temp/165bc2aa-d5fb-4a3c-9ed3-0cbfab21d450/test/index.spec.js" time="0.1650" failures="8">
+    <testcase name="reminders_api should create a new reminder" time="0.0350" classname="should create a new reminder">
+    </testcase>
+    <testcase name="reminders_api should fetch all the reminders" time="0.0230" classname="should fetch all the reminders">
+    </testcase>
+    <testcase name="reminders_api should fetch no reminders if no matching results are present for user" time="0.0180" classname="should fetch no reminders if no matching results are present for user">
+      <failure message="expected [ Array(4) ] to deeply equal []" type="AssertionError"><![CDATA[AssertionError: expected [ Array(4) ] to deeply equal []
+    at Context.<anonymous> (test/index.spec.js:73:30)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)]]></failure>
+    </testcase>
+    <testcase name="reminders_api should fetch no reminders if no matching results are present after the date" time="0.0130" classname="should fetch no reminders if no matching results are present after the date">
+      <failure message="expected [ Array(4) ] to deeply equal []" type="AssertionError"><![CDATA[AssertionError: expected [ Array(4) ] to deeply equal []
+    at Context.<anonymous> (test/index.spec.js:80:30)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)]]></failure>
+    </testcase>
+    <testcase name="reminders_api should fetch all the reminders for a user" time="0.0130" classname="should fetch all the reminders for a user">
+      <failure message="expected [ Array(4) ] to deeply equal [ Array(2) ]" type="AssertionError"><![CDATA[AssertionError: expected [ Array(4) ] to deeply equal [ Array(2) ]
+    at Context.<anonymous> (test/index.spec.js:87:30)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)]]></failure>
+    </testcase>
+    <testcase name="reminders_api should fetch all the reminders after the date" time="0.0120" classname="should fetch all the reminders after the date">
+      <failure message="expected [ Array(4) ] to deeply equal [ Array(1) ]" type="AssertionError"><![CDATA[AssertionError: expected [ Array(4) ] to deeply equal [ Array(1) ]
+    at Context.<anonymous> (test/index.spec.js:94:30)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)]]></failure>
+    </testcase>
+    <testcase name="reminders_api should fetch all the reminders for a user after the date" time="0.0130" classname="should fetch all the reminders for a user after the date">
+      <failure message="expected [ Array(4) ] to deeply equal [ Array(1) ]" type="AssertionError"><![CDATA[AssertionError: expected [ Array(4) ] to deeply equal [ Array(1) ]
+    at Context.<anonymous> (test/index.spec.js:101:30)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)]]></failure>
+    </testcase>
+    <testcase name="reminders_api should fetch a single reminder" time="0.0070" classname="should fetch a single reminder">
+    </testcase>
+    <testcase name="reminders_api should get 404 if the reminder ID does not exist" time="0.0030" classname="should get 404 if the reminder ID does not exist">
+    </testcase>
+    <testcase name="reminders_api should get 405 for a put request to /reminders/:id" time="0.0090" classname="should get 405 for a put request to /reminders/:id">
+      <failure message="expected { Object (_events, _eventsCount, ...) } to have status code 405 but got 404" type="AssertionError"><![CDATA[AssertionError: expected { Object (_events, _eventsCount, ...) } to have status code 405 but got 404
+    at Context.<anonymous> (test/index.spec.js:122:30)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)]]></failure>
+    </testcase>
+    <testcase name="reminders_api should get 405 for a patch request to /reminders/:id" time="0.0090" classname="should get 405 for a patch request to /reminders/:id">
+      <failure message="expected { Object (_events, _eventsCount, ...) } to have status code 405 but got 404" type="AssertionError"><![CDATA[AssertionError: expected { Object (_events, _eventsCount, ...) } to have status code 405 but got 404
+    at Context.<anonymous> (test/index.spec.js:128:30)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)]]></failure>
+    </testcase>
+    <testcase name="reminders_api should get 405 for a delete request to /reminders/:id" time="0.0100" classname="should get 405 for a delete request to /reminders/:id">
+      <failure message="expected { Object (_events, _eventsCount, ...) } to have status code 405 but got 404" type="AssertionError"><![CDATA[AssertionError: expected { Object (_events, _eventsCount, ...) } to have status code 405 but got 404
+    at Context.<anonymous> (test/index.spec.js:134:30)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)]]></failure>
+    </testcase>
+  </testsuite>
+</testsuites>
